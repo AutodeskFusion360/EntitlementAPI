@@ -1,0 +1,13 @@
+{
+	"autodeskProduct":	"Fusion360",
+	"type":	"addin",
+	"author":	"",
+	"description":	{
+		"":	"Sample for using the Entitlement API"
+	},
+	"supportedOS":	"mac",
+	"id":	"bc826bca-a8ae-4d50-82c6-66a9c8c7b747",
+	"version":	"",
+	"runOnStartup":	false,
+	"sourcemac":	"EntitlementAPI.xcodeproj"
+}
