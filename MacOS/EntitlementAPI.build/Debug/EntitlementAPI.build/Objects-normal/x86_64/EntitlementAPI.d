@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/adamnagy/Library/Containers/com.autodesk.mas.fusion360/Data/Library/Application\ Support/Autodesk/Autodesk\ Fusion\ 360/API/AddIns/EntitlementAPI/EntitlementAPI.cpp \
+  /Users/adamnagy/Adam/GitHub/AutodeskFusion360/EntitlementAPI/MacOS/EntitlementAPI.cpp \
   /Users/adamnagy/Library/Containers/com.autodesk.mas.fusion360/Data/Library/Application\ Support/Autodesk/Autodesk\ Fusion\ 360/API/CPP/include/Core/CoreAll.h \
   /Users/adamnagy/Library/Containers/com.autodesk.mas.fusion360/Data/Library/Application\ Support/Autodesk/Autodesk\ Fusion\ 360/API/CPP/include/Core/Utils.h \
   /Users/adamnagy/Library/Containers/com.autodesk.mas.fusion360/Data/Library/Application\ Support/Autodesk/Autodesk\ Fusion\ 360/API/CPP/include/Core/OSMacros.h \

@@ -42,7 +42,7 @@ size_t callback_func(void *ptr, size_t size, size_t count, void *stream)
     ui->messageBox("IsValid = false");
   else
     ui->messageBox("IsValid = true");
-    
+  
   return 0;
 }
 
@@ -58,11 +58,11 @@ void CheckValidity()
   string userId = app->userId();
   string userName = app->userName();
   string appId =
-    "appstore.exchange.autodesk.com%3avoronoisketchgenerator_macos%3aen";
+  "appstore.exchange.autodesk.com%3avoronoisketchgenerator_macos%3aen";
   string url =
-    string("https://apps.exchange.autodesk.com/webservices/checkentitlement") +
-    string("?userid=") + userId +
-    string("&appid=") + appId;
+  string("https://apps.exchange.autodesk.com/webservices/checkentitlement") +
+  string("?userid=") + userId +
+  string("&appid=") + appId;
   
   CURL * curl = curl_easy_init();
   if(curl) {
@@ -76,30 +76,30 @@ void CheckValidity()
 
 extern "C" XI_EXPORT bool run(const char* context)
 {
-	app = Application::get();
-	if (!app)
-		return false;
-
-	ui = app->userInterface();
-	if (!ui)
-		return false;
-
-	ui->messageBox("in run");
+  app = Application::get();
+  if (!app)
+    return false;
+  
+  ui = app->userInterface();
+  if (!ui)
+    return false;
+  
+  ui->messageBox("in run");
   
   CheckValidity();
-
-	return true;
+  
+  return true;
 }
 
 extern "C" XI_EXPORT bool stop(const char* context)
 {
-	if (ui)
-	{
-		ui->messageBox("in stop");
-		ui = nullptr;
-	}
-
-	return true;
+  if (ui)
+  {
+    ui->messageBox("in stop");
+    ui = nullptr;
+  }
+  
+  return true;
 }
 
 #ifdef XI_WIN
@@ -108,15 +108,15 @@ extern "C" XI_EXPORT bool stop(const char* context)
 
 BOOL APIENTRY DllMain(HMODULE hmodule, DWORD reason, LPVOID reserved)
 {
-	switch (reason)
-	{
-	case DLL_PROCESS_ATTACH:
-	case DLL_THREAD_ATTACH:
-	case DLL_THREAD_DETACH:
-	case DLL_PROCESS_DETACH:
-		break;
-	}
-	return TRUE;
+  switch (reason)
+  {
+    case DLL_PROCESS_ATTACH:
+    case DLL_THREAD_ATTACH:
+    case DLL_THREAD_DETACH:
+    case DLL_PROCESS_DETACH:
+      break;
+  }
+  return TRUE;
 }
 
 #endif // XI_WIN
