@@ -57,10 +57,8 @@ void CheckValidity()
   // so we can use that
   string userId = app->userId();
   string userName = app->userName();
-  //string productId =
-  //  "appstore.exchange.autodesk.com%3avoronoisketchgenerator_macos%3aen";
   string appId =
-    "appstore.exchange.autodesk.com%3aaddinrename_windows32and64%3aen";
+    "appstore.exchange.autodesk.com%3avoronoisketchgenerator_macos%3aen";
   string url =
     string("https://apps.exchange.autodesk.com/webservices/checkentitlement") +
     string("?userid=") + userId +
